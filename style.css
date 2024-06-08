@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&family=Poppins:wght@200&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Mochiy Pop One', sans-serif;
+}
+
+
+.signup_container{
+    margin: 50px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+}
+.signup_content{
+    width: 50%;
+    margin: 0 50px;
+    width: 700px;
+    background-color: whitesmoke;
+    padding: 32px 24px;
+    font-size: 14px;
+    font-family: inherit;
+    color: #212121;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.084), 0px 2px 3px rgba(0, 0, 0, 0.168);
+}
+.signup_content .signup_title{
+    font-size: 30px;
+    font-weight: 400;
+    margin:5px 0;
+}
+.signup_content .message_login{
+    margin: 5px 0;
+    font-size: 16px;
+}
+.signup_content .message_login p{
+    font-weight: 400;
+}
+.signup_content .message_login a{
+    text-decoration: none;
+    color: red;
+    font-weight: 900;
+}
+.signup_content .message_login a:hover{
+    opacity: 0.7;
+    text-decoration: underline;
+    color: #126DA6;
+}
+.form-group .form-group{
+    margin: 18px 0;
+}
+.formSignUp .form-group label{
+    display: block;
+    font-size: 16px;
+    font-weight: 500;
+    margin: 5px 0;
+}
+.formSignUp .form-group input{
+    margin: none;
+    display: block;
+    padding: 8px 12px;
+    width: 100%;
+    border-radius: 8px;
+}
+
+.signup_image{
+    width: 50%;
+    height: 70vh;
+}
+
+.signup_image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+}
+.form-group button{
+    margin-top: 10px;
+    outline: none;
+    border: 1px solid #ce1212;
+    display: block;
+    padding: 16px 32px;
+    width: 100%;
+    font-size: 16px;
+    font-weight: 700;
+    border-radius: 16px;
+    cursor: pointer;
+    background-color: #ce1212;
+    color: #fff;
+}
+.form-group button:hover{
+background: #ce1212;
+    box-shadow: inset 0px 1px 0px 0px rgba(255, 255, 255, 0.4),
+        inset 0px -4px 0px 0px rgba(0, 0, 0, 0.2),
+        0px 0px 0px 4px rgba(255, 255, 255, 0.2),
+        0px 0px 180px 0px #ce1212;;
+    transform: translateY(-2px);
+}
+.ggbutton {
+    --border-color: linear-gradient(-45deg, #ffae00, #7e03aa, #00fffb);
+    --border-width: 0.125em;
+    --curve-size: 0.5em;
+    --blur: 30px;
+    --bg: #fff;
+    --color: black;
+    color: var(--color);
+    cursor: pointer;
+    /* use position: relative; so that BG is only for .btn */
+    position: relative;
+    isolation: isolate;
+    display: inline-grid;
+    place-content: center;
+    padding: 0.5em 1.5em;
+    font-size: 17px;
+    border: 0;
+    text-transform: uppercase;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.6);
+    clip-path: polygon(
+            /* Top-left */
+            0% var(--curve-size),
+            var(--curve-size) 0,
+            /* top-right */
+            100% 0,
+            100% calc(100% - var(--curve-size)),
+            /* bottom-right 1 */
+            calc(100% - var(--curve-size)) 100%,
+            /* bottom-right 2 */
+            0 100%);
+    transition: color 250ms;
+}
+
+.ggbutton::after,
+.ggbutton::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+}
+
+.ggbutton::before {
+    background: var(--border-color);
+    background-size: 300% 300%;
+    animation: move-bg7234 5s ease infinite;
+    z-index: -2;
+}
+
+@keyframes move-bg7234 {
+    0% {
+        background-position: 31% 0%;
+    }
+
+    50% {
+        background-position: 70% 100%;
+    }
+
+    100% {
+        background-position: 31% 0%;
+    }
+}
+
+.ggbutton::after {
+    background: var(--bg);
+    z-index: -1;
+    clip-path: polygon(
+            /* Top-left */
+            var(--border-width) calc(var(--curve-size) + var(--border-width) * 0.5),
+            calc(var(--curve-size) + var(--border-width) * 0.5) var(--border-width),
+            /* top-right */
+            calc(100% - var(--border-width)) var(--border-width),
+            calc(100% - var(--border-width)) calc(100% - calc(var(--curve-size) + var(--border-width) * 0.5)),
+            /* bottom-right 1 */
+            calc(100% - calc(var(--curve-size) + var(--border-width) * 0.5)) calc(100% - var(--border-width)),
+            /* bottom-right 2 */
+            var(--border-width) calc(100% - var(--border-width)));
+    transition: clip-path 500ms;
+}
+
+.ggbutton:where(:hover, :focus)::after {
+    clip-path: polygon(
+            /* Top-left */
+            calc(100% - var(--border-width)) calc(100% - calc(var(--curve-size) + var(--border-width) * 0.5)),
+            calc(100% - var(--border-width)) var(--border-width),
+            /* top-right */
+            calc(100% - var(--border-width)) var(--border-width),
+            calc(100% - var(--border-width)) calc(100% - calc(var(--curve-size) + var(--border-width) * 0.5)),
+            /* bottom-right 1 */
+            calc(100% - calc(var(--curve-size) + var(--border-width) * 0.5)) calc(100% - var(--border-width)),
+            /* bottom-right 2 */
+            calc(100% - calc(var(--curve-size) + var(--border-width) * 0.5)) calc(100% - var(--border-width)));
+    transition: 200ms;
+}
+
+.ggbutton:where(:hover, :focus) {
+    color: #afffff;
+}

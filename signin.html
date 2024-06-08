@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign In | Yummy</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./header.css" />
+  </head>
+  <header>
+    <!-- This div is  intentionally blank. It creates the transparent black overlay over the video which you can modify in the CSS -->
+    <div class="overlay"></div>
+
+    <!-- The HTML5 video element that will create the background video on the header -->
+    <video
+      playsinline="playsinline"
+      autoplay="autoplay"
+      muted="muted"
+      loop="loop"
+    >
+      <source
+        src="https://videos.pexels.com/video-files/2620043/2620043-uhd_3840_2160_25fps.mp4"
+      />
+    </video>
+
+    <!-- The header content -->
+    <div class="container h-100">
+      <div class="d-flex h-100 text-center align-items-center">
+        <div class="w-100 text-white">
+          <h1 class="display-3">Welcome to Yummy</h1>
+          <p class="lead mb-0">Let's book a table for yourself</p>
+        </div>
+      </div>
+    </div>
+  </header>
+  <body>
+    <div class="signup_container">
+      <div class="signup_content">
+        <h1 class="signup_title">Welcome Back,Yummy</h1>
+        <p class="message_login">
+          Don't have an account <a href="./signup.html">Sign Up</a>
+        </p>
+        <a href="./forget_password.html">Forget Password</a>
+        <form action="" class="formSignUp" autocomplete="on" id="formSignIn">
+          <button class="ggbutton" id="googleSignInButton" class="button">
+            Sign in with Google
+          </button>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="Email" required />
+          </div>
+          <div class="form-group">
+            <label for="password">Password</label>
+            <input
+              type="password"
+              id="password"
+              placeholder="Password"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <button type="submit">Sign In</button>
+          </div>
+        </form>
+      </div>
+      <div class="signup_image">
+        <img
+          src="https://luhanhvietnam.com.vn/tour-chau-au/wp-content/uploads/2022/06/phong-cach-am-thuc-chau-au-2.jpg"
+          alt=""
+        />
+      </div>
+    </div>
+    <script type="module" src="./signin.js"></script>
+    <script type="module" src="/ggsignin.js"></script>
+  </body>
+</html>
